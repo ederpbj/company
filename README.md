@@ -114,3 +114,17 @@ Atualizar app.js
 >Criar link no cabecalho
 
     import { Link } from 'react-router-dom'
+
+>Criar componets/portfolio estático
+
+    Criar Portfolio.js
+    Colar de Site.js
+    Altera App.js route
+    Adiciona no cabeçalho o Link
+
+>Criar componets/precos estático
+
+    Criar Precos.js
+    Colar de Site.js
+    Altera App.js route
+    Adiciona no cabeçalho o Link
