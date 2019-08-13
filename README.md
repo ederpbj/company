@@ -105,3 +105,12 @@ Atualizar app.js
 >Rotas separando as páginas
 
     yarn add react-router-dom
+
+>Colar company no cabecalho para aparecer em todas as páginas
+
+    <div className='jumbotron text-center'>
+                <h1>Company</h1> 
+
+>Criar link no cabecalho
+
+    import { Link } from 'react-router-dom'

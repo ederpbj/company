@@ -13,8 +13,8 @@ function App() {
       <div className="App">
         <Cabecalho />
 
-        <Inicio />
-        <Servicos />
+        <Route path='/' exact component={Inicio} />
+        <Route path='/servicos' component={Servicos} />
         
         
         <Rodape />
