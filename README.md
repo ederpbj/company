@@ -133,3 +133,12 @@ Atualizar app.js
 
     Criar em src/admin/Admin.js
     criar link no app.js
+
+>Criar src/admin/AdminMenu
+
+    criar e importar pelo Admin
+    colar do bootstraap
+
+    https://getbootstrap.com/docs/4.3/components/list-group/
+
+>Iniciando com firebase
