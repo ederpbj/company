@@ -33,7 +33,7 @@ Alteranto app.js
 
 Criar src/Site.js
 
-Colar do 
+Colar e converter html para JSX
 
     <nav class="navbar navbar-default navbar-fixed-top">
 
@@ -48,9 +48,41 @@ Colar do
     Mudar <br> por <br />
     Fechar o <images />
     Remover o style
+    Remover slideanim
 
 colocar div
 
     <div>Todo conteudo</div>
 
 Remover referencias google maps
+
+Atualizar app.js
+
+    import React from 'react';
+    import Site from './Site'
+
+    function App() {
+    return (
+        <div className="App">
+
+        <Site />
+                
+        </div>
+    );
+    }
+
+    export default App;
+
+
+>Criar component/Rodape.js
+
+    import React from 'react'
+
+    const Rodape = props => {
+        return (
+            
+        )
+    }
+
+    export default Rodape
+

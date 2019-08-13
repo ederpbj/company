@@ -30,7 +30,7 @@ const Site = props => {
                 <p>We specialize in blablabla</p> 
                     <form>
                         <div className='input-group'>
-                            <input type='email' className='form-control' size='50' placeholder='Email Address' required />>
+                            <input type='email' className='form-control' size='50' placeholder='Email Address' required />
                             <div className='input-group-btn'>
                                 <button type='button' className='btn btn-danger'>Subscribe</button>
                             </div>
@@ -56,64 +56,64 @@ const Site = props => {
                 <div className='container-fluid bg-grey'>
                 <div className='row'>
                     <div className='col-sm-4'>
-                    <span className='glyphicon glyphicon-globe logo slideanim'></span>
+                    <span className='glyphicon glyphicon-globe logo'></span>
                     </div>
                     <div className='col-sm-8'>
-                    <h2>Our Values</h2><br />
-                    <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br />
-                    <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h2>Our Values</h2><br />
+                        <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br />
+                        <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
                 </div>
 
                 {/* Container (Services Section) */}
                 <div id='services' className='container-fluid text-center'>
-                <h2>SERVICES</h2>
-                <h4>What we offer</h4>
-                <br />
-                <div className='row slideanim'>
-                    <div className='col-sm-4'>
-                    <span className='glyphicon glyphicon-off logo-small'></span>
-                    <h4>POWER</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
+                    <h2>SERVICES</h2>
+                    <h4>What we offer</h4>
+                    <br />
+                    <div className='row'>
+                        <div className='col-sm-4'>
+                            <span className='glyphicon glyphicon-off logo-small'></span>
+                            <h4>POWER</h4>
+                            <p>Lorem ipsum dolor sit amet..</p>
+                        </div>
+                        <div className='col-sm-4'>
+                            <span className='glyphicon glyphicon-heart logo-small'></span>
+                            <h4>LOVE</h4>
+                            <p>Lorem ipsum dolor sit amet..</p>
+                        </div>
+                        <div className='col-sm-4'>
+                            <span className='glyphicon glyphicon-lock logo-small'></span>
+                            <h4>JOB DONE</h4>
+                            <p>Lorem ipsum dolor sit amet..</p>
+                        </div>
                     </div>
-                    <div className='col-sm-4'>
-                    <span className='glyphicon glyphicon-heart logo-small'></span>
-                    <h4>LOVE</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
+                    <br /><br />
+                    <div className='row '>
+                        <div className='col-sm-4'>
+                            <span className='glyphicon glyphicon-leaf logo-small'></span>
+                            <h4>GREEN</h4>
+                            <p>Lorem ipsum dolor sit amet..</p>
+                        </div>
+                        <div className='col-sm-4'>
+                            <span className='glyphicon glyphicon-certificate logo-small'></span>
+                            <h4>CERTIFIED</h4>
+                            <p>Lorem ipsum dolor sit amet..</p>
+                        </div>
+                        <div className='col-sm-4'>
+                            <span className='glyphicon glyphicon-wrench logo-small'></span>
+                            <h4>HARD WORK</h4>
+                            <p>Lorem ipsum dolor sit amet..</p>
+                        </div>
                     </div>
-                    <div className='col-sm-4'>
-                    <span className='glyphicon glyphicon-lock logo-small'></span>
-                    <h4>JOB DONE</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
-                    </div>
-                </div>
-                <br /><br />
-                <div className='row slideanim'>
-                    <div className='col-sm-4'>
-                    <span className='glyphicon glyphicon-leaf logo-small'></span>
-                    <h4>GREEN</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
-                    </div>
-                    <div className='col-sm-4'>
-                    <span className='glyphicon glyphicon-certificate logo-small'></span>
-                    <h4>CERTIFIED</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
-                    </div>
-                    <div className='col-sm-4'>
-                    <span className='glyphicon glyphicon-wrench logo-small'></span>
-                    <h4>HARD WORK</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
-                    </div>
-                </div>
                 </div>
 
                 {/* Container (Portfolio Section) */}
                 <div id='portfolio' className='container-fluid text-center bg-grey'>
                     <h2>Portfolio</h2><br />
                     <h4>What we have created</h4>
-                        <div className='row text-center slideanim'>
+                        <div className='row text-center'>
                             <div className='col-sm-4'>
                                 <div className='thumbnail'>
                                     <img src='paris.jpg' alt='Paris' width='400' height='300' />
@@ -177,7 +177,7 @@ const Site = props => {
                         <h2>Pricing</h2>
                         <h4>Choose a payment plan that works for you</h4>
                     </div>
-                    <div className='row slideanim'>
+                    <div className='row'>
                         <div className='col-sm-4 col-xs-12'>
                             <div className='panel panel-default text-center'>
                                 <div className='panel-heading'>
@@ -248,7 +248,7 @@ const Site = props => {
                             <p><span className='glyphicon glyphicon-phone'></span> +00 1515151515</p>
                             <p><span className='glyphicon glyphicon-envelope'></span> myemail@something.com</p>
                         </div>
-                        <div className='col-sm-7 slideanim'>
+                        <div className='col-sm-7'>
                             <div className='row'>
                                 <div className='col-sm-6 form-group'>
                                     <input className='form-control' id='name' name='name' placeholder='Name' type='text' required/>
@@ -270,12 +270,7 @@ const Site = props => {
                 {/* Image of location/map */}
                 <img src='/w3images/map.jpg' className='w3-image w3-greyscale-min' />
 
-                <footer className='container-fluid text-center'>
-                    <a href='#myPage' title='To Top'>
-                        <span className='glyphicon glyphicon-chevron-up'></span>
-                    </a>
-                    <p>Bootstrap Theme Made By <a href='https://www.w3schools.com' title='Visit w3schools'>www.w3schools.com</a></p>
-                </footer>
+               
             </div>
     )
 }
