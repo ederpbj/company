@@ -33,7 +33,7 @@ Alteranto app.js
 
 Criar src/Site.js
 
-colar do 
+Colar do 
 
     <nav class="navbar navbar-default navbar-fixed-top">
 
@@ -41,14 +41,16 @@ colar do
 
     <footer class="container-fluid text-center">
 
-Mudar  class para className
-Mudar " por '
-Mudar <!-- para {/*
-Mudar --> para */}
-Mudar <br> por <br />
-
+    Mudar  class para className
+    Mudar " por '
+    Mudar <!-- para {/*
+    Mudar --> para */}
+    Mudar <br> por <br />
+    Fechar o <images />
+    Remover o style
 
 colocar div
-<div>Todo conteudo</div>
 
-- Remover referencias google maps
+    <div>Todo conteudo</div>
+
+Remover referencias google maps
