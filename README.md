@@ -14,3 +14,40 @@ Criando site reactjs com template, firebase
 
     cd company
     yarn start
+
+>Pegando template
+
+Copiando links no index.html
+
+    <!--
+      Links para estilos
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/estilo.css" /> 
+
+Alteranto app.js
+
+    - apagar referencias padrão
+
+Criar src/Site.js
+
+colar do 
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+    até
+
+    <footer class="container-fluid text-center">
+
+Mudar  class para className
+Mudar " por '
+Mudar <!-- para {/*
+Mudar --> para */}
+
+
+colocar div
+<div>Todo conteudo</div>
+
+- Remover referencias google maps
