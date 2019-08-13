@@ -198,3 +198,28 @@ Colar no infeior do body
 >Startar com yarn
 
     yarn start
+
+>Transformando Portifolio.js em uma classe
+
+    Alterar:
+
+    import React, { Component } from 'react'
+    const Portfolio = props => {
+
+    por:
+
+    class Portfolio extends Component{
+    constructor(props){
+        super(props)
+    }
+
+    render(){
+        return(
+            
+        )
+    }
+
+>Importar para Portfolio.js
+
+
+    import config from './../firebase-config'
