@@ -3,18 +3,8 @@ import React from 'react'
 const Site = props => {
     return (
         <div>
-
-
                
-
-                
-
-                
-
-                
-
-               
-            </div>
+        </div>
     )
 }
 

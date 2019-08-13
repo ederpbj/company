@@ -1,7 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom'
 
-import Site from './Site'
 import Rodape from './components/Rodape'
 import Cabecalho from './components/Cabecalho';
 import Inicio from './components/Inicio';
@@ -9,6 +8,8 @@ import Servicos from './components/Servicos';
 import Portfolio from './components/Portfolio';
 import Precos from './components/Precos';
 import Contatos from './components/Contatos';
+//Área administrativa
+import Admin from './admin/Admin'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/precos' component={Precos} />
         <Route path='/contatos' component={Contatos} />
         
+        <Route path='/admin' component={Admin} />
         
         <Rodape />
       </div>

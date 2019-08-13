@@ -128,3 +128,8 @@ Atualizar app.js
     Colar de Site.js
     Altera App.js route
     Adiciona no cabeçalho o Link
+
+>Criando página Admin
+
+    Criar em src/admin/Admin.js
+    criar link no app.js
