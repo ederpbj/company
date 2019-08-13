@@ -1,15 +1,25 @@
 import React from 'react';
+import {BrowserRouter, Route} from 'react-router-dom'
 
 import Site from './Site'
 import Rodape from './components/Rodape'
+import Cabecalho from './components/Cabecalho';
+import Inicio from './components/Inicio';
+import Servicos from './components/Servicos';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
+      <div className="App">
+        <Cabecalho />
 
-      <Site />
-      <Rodape />
-    </div>
+        <Inicio />
+        <Servicos />
+        
+        
+        <Rodape />
+      </div>
+    </BrowserRouter>
   );
 }
 

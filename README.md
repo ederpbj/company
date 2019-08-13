@@ -86,3 +86,22 @@ Atualizar app.js
 
     export default Rodape
 
+>Criar cabecalho
+
+    Pegar o nav
+
+>Criar componets/Inicio
+
+    Copiar do Site.js 
+    para Inicio.js
+    Atualizar app.js
+
+>Criar componets/servicos
+
+    Criar Servicos.js
+    Copiar de site 
+    Colar no Servicos.js
+
+>Rotas separando as páginas
+
+    yarn add react-router-dom
