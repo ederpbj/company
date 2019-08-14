@@ -14,8 +14,25 @@ class AdminPortfolio extends Component{
         console.log(this.titulo.value)
         console.log(this.descricao.value)
         console.log(this.imagem.value)
-        //Evento dos botões submit
+
+        //Evento dos botões submit, faz ele parar de atualizar página
         e.preventDefault()
+
+        //files -> retorna um array de arquivos
+        const arquivo = this.imagem.files[0]
+        console.log(arquivo)
+
+        const {name, size, type} = arquivo
+        console.log("name, size, type")
+        console.log(name, size, type)
+
+        //Referência
+        const ref = storage.ref(name)
+        //ponha
+        ref.put(arquivo)
+            .then(img => {
+                console.log(img.metadata)
+            })
     }
 
     render(){
