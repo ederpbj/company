@@ -223,3 +223,9 @@ Colar no infeior do body
 
 
     import config from './../firebase-config'
+
+>Correção de erro firebase
+
+    1. Do npm uninstall firebase
+    2. npm cache clear
+    3. npm i firebase@^4.8.0 --save
