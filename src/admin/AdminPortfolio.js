@@ -10,29 +10,51 @@ class AdminPortfolio extends Component{
     }
 
     gravaPortfolio(e){
-        console.log("Vamos gravar tudo!!!!!")
+        /* console.log("Vamos gravar tudo!!!!!")
         console.log(this.titulo.value)
         console.log(this.descricao.value)
-        console.log(this.imagem.value)
-
-        //Evento dos botões submit, faz ele parar de atualizar página
-        e.preventDefault()
+        console.log(this.imagem.value) */
 
         //files -> retorna um array de arquivos
         const arquivo = this.imagem.files[0]
-        console.log(arquivo)
+        //console.log(arquivo)
 
         const {name, size, type} = arquivo
-        console.log("name, size, type")
-        console.log(name, size, type)
+        /* console.log("name, size, type")
+        console.log(name, size, type) */
 
-        //Referência
+        //Pega a referência dentro do storage
         const ref = storage.ref(name)
-        //ponha
+        
+        //Coloca arquivo dentro do firebase (Upload)
         ref.put(arquivo)
+        //Após upload devolve esse objeto
             .then(img => {
-                console.log(img.metadata)
+                //console.log(img.metadata)
+                //Pegar a referencia da URL dowload
+                img.ref.getDownloadURL()
+                    .then(downloadURL => {
+                        //console.log(downloadURL)
+                        
+                        //Novo objeto portfolio
+                        const novoPortfolio = {
+                            titulo: this.titulo.value,
+                            descricao: this.descricao.value,
+                            imagem: downloadURL
+                        }
+
+                        //console.log(novoPortfolio)
+
+                        //Gravar objeto no firebase
+                        firebase.push('portfolio', {
+                            data: novoPortfolio
+                        })
+                    })
             })
+
+
+            //Evento dos botões submit, faz ele parar de atualizar página
+            e.preventDefault()
     }
 
     render(){
