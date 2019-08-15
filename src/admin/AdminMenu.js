@@ -1,13 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const AdminMenu = props =>{
     return(
         <div>
             <div className="list-group">
-                <a href="/admin" className="list-group-item list-group-item-action active">
+                <Link to="/admin" className="list-group-item list-group-item-action active">
                     Selecione uma opção
-                </a>
-                <a href="/admin/portfolio" className="list-group-item list-group-item-action">Portfolio</a>
+                </Link>
+                <Link to="/admin/portfolio" className="list-group-item list-group-item-action">Portfolio</Link>
                
             </div>
         </div>
