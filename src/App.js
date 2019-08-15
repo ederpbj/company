@@ -10,6 +10,7 @@ import Precos from './components/Precos';
 import Contatos from './components/Contatos';
 //Área administrativa
 import Admin from './admin/Admin'
+import Login from './admin/Login';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/contatos' component={Contatos} />
         
         <Route path='/admin' component={Admin} />
+        <Route path='/login' component={Login} />
         
         <Rodape />
       </div>
