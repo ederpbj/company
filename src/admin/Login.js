@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 
+import firebase, {auth} from './../firebase-config'
+
 class Login extends Component {
     constructor(props){
         super(props)
@@ -12,6 +14,34 @@ class Login extends Component {
 
     autenticaUsuario(){
         console.log(this.email.value, this.senha.value)
+
+        auth.signInWithEmailAndPassword(this.email.value, this.senha.value)
+            .then(user => {
+                console.log('Usuário logado: ', user)
+                //alert('Usuário logado!')
+            })
+            .catch(err => {
+                console.log('Error: ', err.code)
+                switch (err.code) {
+                    case 'auth/user-not-found':
+                        alert('Usuário não cadastrado!')
+                        
+                        break;
+
+                    case 'auth/wrong-password':
+                        alert('Senha incorreta!')
+                        
+                        break;
+
+                    case 'auth/invalid-email':
+                        alert('Digite um e-mail válido!')
+                        
+                        break;
+                
+                    default:
+                        break;
+                }
+            })
     }
 
     render(){
