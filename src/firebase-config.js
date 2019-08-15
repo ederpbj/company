@@ -23,5 +23,6 @@ var base = Rebase.createClass(app.database());
 //const config = Rebase.createClass(app.database())
 
 export const storage = app.storage()
+export const auth = app.auth()
 
 export default base
