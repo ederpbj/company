@@ -6,17 +6,29 @@ class AdminPortfolio extends Component{
     constructor(props){
         super(props)
 
+        this.state = {
+            estaGravando: false
+        }
+
         this.gravaPortfolio = this.gravaPortfolio.bind(this);
     }
 
     gravaPortfolio(e){
+        //Capturar os elementos
+        const itemPortfolio = {
+            titulo: this.titulo.value,
+            descricao: this.descricao.value,
+            imagem:this.imagem
+        }
+
+        this.setState({estaGravando: true})
         /* console.log("Vamos gravar tudo!!!!!")
         console.log(this.titulo.value)
         console.log(this.descricao.value)
         console.log(this.imagem.value) */
 
         //files -> retorna um array de arquivos
-        const arquivo = this.imagem.files[0]
+        const arquivo = itemPortfolio.imagem.files[0]
         //console.log(arquivo)
 
         const {name, size, type} = arquivo
@@ -38,8 +50,8 @@ class AdminPortfolio extends Component{
                         
                         //Novo objeto portfolio
                         const novoPortfolio = {
-                            titulo: this.titulo.value,
-                            descricao: this.descricao.value,
+                            titulo: itemPortfolio.titulo,
+                            descricao: itemPortfolio.descricao,
                             imagem: downloadURL
                         }
 
@@ -49,6 +61,7 @@ class AdminPortfolio extends Component{
                         firebase.push('portfolio', {
                             data: novoPortfolio
                         })
+                        this.setState({estaGravando: false})
                     })
             })
 
@@ -58,6 +71,14 @@ class AdminPortfolio extends Component{
     }
 
     render(){
+        if(this.state.estaGravando){
+            return (
+                <div className="container">
+                <p><span className="glyphicon glyphicon-refresh" />aguarde ...</p>
+                </div>
+            )
+        }
+
         return(
             <div style={{padding: '120px'}}>
                 <form onSubmit={this.gravaPortfolio}>
