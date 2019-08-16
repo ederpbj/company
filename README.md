@@ -12,6 +12,21 @@ Criando site reactjs com template, firebase
     git push -u origin master
 
 
+----Como era feito git-----
+>Clonar
+	git clone https://github.com/ederpbj/SiteForm.git
+
+>Criar projeto
+
+	create-react-app site-form --use-npm
+
+>Testar
+
+	cd site-form
+
+	npm start
+
+
 >Baixar template bootstrap
 
 	https://www.w3schools.com/bootstrap/bootstrap_theme_company.asp
