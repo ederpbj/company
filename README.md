@@ -245,3 +245,19 @@ em produção repetir processo
 
     yarn build
     firebase deploy
+
+>Limpar o projeto no git
+
+    git remote rm origin
+    git remote -v
+
+>Enviar projeto para git
+
+    git remote add origin https://github.com/ederpbj/company.git
+    git push -u origin master
+
+    -----obs------
+    
+    npm install -g serve
+    serve -s build
+    https://bit.ly/CRA-deploy
