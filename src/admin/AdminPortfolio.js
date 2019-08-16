@@ -31,7 +31,8 @@ class AdminPortfolio extends Component{
         const arquivo = itemPortfolio.imagem.files[0]
         //console.log(arquivo)
 
-        const {name, size, type} = arquivo
+        //const {name, size, type} = arquivo
+        const {name} = arquivo
         /* console.log("name, size, type")
         console.log(name, size, type) */
 

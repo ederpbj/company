@@ -229,3 +229,19 @@ Colar no infeior do body
     1. Do npm uninstall firebase
     2. npm cache clear
     3. npm i firebase@^4.8.0 --save
+
+>Aula 40 hospedando
+
+    npm install -g firebase-tools
+    firebase login
+    firebase init
+    
+
+    ver telas
+
+>Para finalizar configuração do host
+
+em produção repetir processo
+
+    yarn build
+    firebase deploy
